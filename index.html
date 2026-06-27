@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Aurelio Bryan is a creative web developer building thoughtful digital experiences." />
+    <title>Aurelio Bryan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="AB.ico" type="image/x-icon">
+  </head>
+  <body class="is-loading">
+    <div class="loader" id="pageLoader" aria-hidden="true">
+      <div class="loader-ring"></div>
+    </div>
+
+    <div class="site-shell">
+      <header class="header">
+        <a class="logo" href="#home">Aurelio</a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#home" class="active">Home</a>
+          <a href="#experience">Experience</a>
+          <a href="#achievements">Achievements</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle color mode">🌙</button>
+      </header>
+
+      <main>
+        <section class="hero reveal" id="home">
+          <div class="hero-image" aria-hidden="true"></div>
+          <div class="hero-text">
+            <p class="eyebrow">Hey there, I'm Aurelio Bryan</p>
+            <h1>A young aspiring web developer</h1>
+            <p>
+              I create polished, thoughtful experiences that balance imagination with clarity.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#experience">Explore my work</a>
+              <a class="btn btn-soft" href="#contact">Let’s collaborate</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="experience reveal" id="experience">
+          <div class="section-head">
+            <p class="eyebrow">Experience</p>
+            <h2>My journey so far</h2>
+          </div>
+
+          <div class="experience-slider">
+            <button class="slider-btn" id="prevBtn" type="button">Prev</button>
+            <div class="slider-window">
+              <div class="slides-container"></div>
+            </div>
+            <button class="slider-btn" id="nextBtn" type="button">Next</button>
+          </div>
+          <div class="dots" id="dots"></div>
+        </section>
+
+        <section class="achievements reveal" id="achievements">
+          <div class="section-head">
+            <p class="eyebrow">Achievements</p>
+            <h2>What I’ve accomplished</h2>
+          </div>
+          <div class="achievement-grid" id="achievementsGrid"></div>
+        </section>
+      </main>
+
+      <footer class="footer reveal" id="contact">
+        <div>
+          <h2>Let’s build something great together.</h2>
+          <p>Reach out for portfolio websites, UI refreshes, or creative web experiences.</p>
+        </div>
+        <div class="footer-actions">
+          <a class="footer-link" href="mailto:aureliobryan1@gmail.com">aureliobryan1@gmail.com</a>
+          <p class="footer-credit">Crafted with care, clarity, and a calm sense of curiosity.</p>
+        </div>
+      </footer>
+    </div>
+
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
